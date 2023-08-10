@@ -1,0 +1,29 @@
+h2{
+    text-align: center;
+    text-transform:uppercase;
+}
+form{
+    
+    background-color:rgba(0, 187, 255, 0.432);
+    padding: 10px;
+    margin-left: 500px;
+    margin-right: 500px;
+}
+input[type=text] {
+    font-style: oblique;
+    width: 100%;
+    padding: 8px 10px;
+    margin: 20px 0;
+    box-sizing: border-box;
+  }
+input[type=text]:focus {
+    background-color: rgb(82, 146, 168);
+  }
+::placeholder{
+    color: brown;
+}
+button
+{
+    color: rgb(255, 0, 0);
+    background-color: aliceblue;
+}

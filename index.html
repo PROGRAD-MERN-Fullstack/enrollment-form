@@ -10,7 +10,83 @@
 <body>
     <h2>Student Enrollment Form</h2>
     <form>
+        <label for="User-firstname">First Name:</label>
+        <input type="text"
+        placeholder="Enter your name here"
+        id="User-firstname"
+        name="User-firstname"
+        required/>
+        <br><br>
+        <label for="User-lastname">Last Name:</label>
+        <input type="text"
+        placeholder="Enter your name here"
+        id="User-Lastname"
+        name="User-Lastname"
+        required/>
+        <br><br>
+        <label for="User-Registernumber">Register Number:</label>
+        <input type="text"
+        placeholder="Enter your Register Number here"
+        id="User-Registernumber"
+        name="User-Registernumber"
+        required/>
+        <br><br>
+        <label for="User-number">MobileNumber:</label>
+        <input type="text"
+        placeholder="Enter your MobileNumber here"
+        pattern="[6789][0-9]{9}"
+        id="User-number"
+        name="User-number"
+        required/>
+        <br><br>
+        <label for="Gender">Gender:</label>
+        <input type="radio" name="gender" value="male"> Male
+        <input type="radio" name="gender" value="female"> Female
+        <input type="radio" name="gender" value="other"> Other
+        <br><br>
+        <label for="User-Emailid">Email id</label>
+        <input type="text"
+        placeholder="Enter your Email here"
+        pattern="^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$"
+        id="User-Emailid"
+        name="User-Emailid"
+        required/>
+        <br><br>
+        <label for="User-Department">Department:</label>
+        <select name="User-Department" id="User-Department">
+        <option value="CSE">CSE</option>
+        <option value="IT">IT</option>
+        <option value="ECE">ECE</option>
+        <option value="EEE">EEE</option>
+        <option value="MECH">MECH</option>
+        <option value="AIDS">AIDS</option>
+        </select>
+        <br><br>
+        <label for="User-Year">Year:</label>
+        <select name="User-Year" id="Year">
+        <option value="1st-year">1st-year</option>
+        <option value="2nd-year">2nd-year</option>
+        <option value="3rd-year">3rd-year</option>
+        <option value="4th-year">4th-year</option>
+        </select>
+        <br><br>
+        <label for="Languages-known">Languages Known:</label>
+        <input type="checkbox" name="Languages-known" value="C"> C
+        <input type="checkbox" name="Languages-known" value="C++"> C++
+        <input type="checkbox" name="Languages-known" value="Java"> Java
+        <input type="checkbox" name="Languages-known" value="Python"> Python
+        <br><br>
+        <label for="Available-slots">Available-slots:</label>
+        <input type="radio" name="slots" value="10am"> 10 am
+        <input type="radio" name="slots" value="2pm"> 2 pm
+        <input type="radio" name="slots" value="5pm"> 5 pm
+        <br><br>
+        <label for="Resume">Resume:</label>
+        <input type="file" id="myfile" name="myfile" pattern=".+\.pdf$">
+        <br><br>
+        <button>SUBMIT</button>
         
+
     </form>
     
 </body>
